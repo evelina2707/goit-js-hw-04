@@ -13,8 +13,23 @@
 // Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
 
 const profile = {
-    username: "Jacob",
+  username: "Jacob",
   playTime: 300,
+
+
+  changeUsername(newName) {
+    this.username = newName;
+  },
+
+
+  updatePlayTime(hours) {
+    this.playTime += hours;
+  },
+
+  getInfo() {
+      return `${this.username} has ${this.playTime} active hours!}`;
+
+  },
 };
 
 
